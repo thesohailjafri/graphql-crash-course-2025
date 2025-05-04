@@ -1,0 +1,37 @@
+{
+  "compilerOptions": {
+    "target": "ES2020", // specifies the ECMAScript target version
+    "lib": ["ES2020"], // specifies the library files to be included in the compilation
+    "module": "ESNext", // specifies the module system
+    "moduleResolution": "Node", // specifies how modules are resolved
+    "outDir": "dist", // specifies an output directory for the compiled files
+    "strict": true, // when strict mode is enabled, TypeScript will enforce more checks and rules to your code
+    "allowSyntheticDefaultImports": true, // allows default imports from modules with no default export
+    "allowUnreachableCode": false, // allows unreachable code
+    "allowUnusedLabels": false, // allows unused labels in your code
+    "checkJs": true, // checks JavaScript files for type errors
+    "declaration": true, // generates corresponding .d.ts file
+    "declarationMap": true, // generates a source map for each corresponding .d.ts file
+    "esModuleInterop": true, // enables compatibility with Babel and Webpack
+    // "exactOptionalPropertyTypes": true, // ensures that optional properties are correctly typed
+    "forceConsistentCasingInFileNames": true, // ensures that file names are consistently cased
+    "importHelpers": true, // allows importing helper functions from tslib
+    "isolatedModules": true, // ensures that each file is independent of others
+    "noEmitOnError": true, // prevents TypeScript from emitting output when errors are present
+    "noFallthroughCasesInSwitch": true, // ensures that each switch statement has a default case
+    "noImplicitOverride": true, // ensures that an override is explicitly marked with the override keyword
+    "noImplicitReturns": true, // ensures that each function returns a value
+    "noUncheckedIndexedAccess": true, // ensures that indexed access expressions are checked
+    "noUnusedLocals": true, // ensures that all local variables are used
+    "noUnusedParameters": true, // ensures that all parameters are used
+    "removeComments": true, // removes comments from the output
+    "skipLibCheck": true, // skips type checking of all declaration files
+    "sourceMap": true, // generates corresponding .map file
+    "incremental": false, // enables incremental compilation
+    "paths": {
+      "@/types": ["./src/types"] // specifies path mappings for module resolution
+    }
+  },
+  "include": ["src"],
+  "exclude": ["tests", "dist", "coverage", "node_modules"]
+}
